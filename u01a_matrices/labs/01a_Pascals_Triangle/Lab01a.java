@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,6 +13,15 @@ public class Lab01a
 {
 	public static void main( String args[] ) throws IOException
 	{
-		//add code and test cases here
+      File file = new File("lab01a.dat");
+      Scanner scanner = new Scanner(file);
+      int number=1;
+      int max =scanner.nextInt();
+      for(int i=0;i<max;i++){
+               number = scanner.nextInt();
+               PascalsTriangle test = new PascalsTriangle(number+1);
+               test.createTriangle();
+               out.print(test);}
 	}
 }
+
